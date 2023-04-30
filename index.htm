@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+box-sizing:border-box;
+        }
+        body{
+            background-color:silver;
+        }
+        
+header{
+    height:200px;
+    display:flex;
+    justify-content:space-around;
+    
+
+    
+}
+
+ui{
+    display:flex;
+    list-style-type:none;
+}
+ui li a{
+    padding:0 30px;
+color:aqua;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+p{
+    margin-top:6px;
+    padding-left:15px;
+}
+h1{
+    color:blue
+}
+h2{
+    color:brown;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="mark">
+        <img class="gap" src="data:image/jpeg;base64,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" alt="logo" height="120px"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign up</a></li>
+
+                
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main>
+        <div class="para-left">
+            <h1>Phone</h1>
+            <h2>Galaxy</h2>
+            <p>Automation embedded in the customer's handset and in the base stations control all phases of the call, from detecting the presence of a handset in a service area, temporary assignment of a channel to a handset making a call, interface with the land-line side of the network to connect to other subscribers, and collection of billing information for the service. The automation systems can control the "hand off" of a customer handset moving between one cell and another so that a call in progress continues without interruption, changing channels if required. In the earliest mobile phone systems by contrast, all control was done manually; the customer would search for an unoccupied channel and speak to a mobile operator to request connection of a call to a landline number or another mobile. At the termination of the call the mobile operator would manually record the billing information.
+
+                Mobile phones communicate with cell towers that are placed to give coverage across a telephone service area, which is divided up into 'cells'. Each cell uses a different set of frequencies from neighboring cells, and will typically be covered by three towers placed at different locations. The cell towers are usually interconnected to each other and the phone network and the internet by wired connections. Due to bandwidth limitations each cell will have a maximum number of cell phones it can handle at once. 
+                </p>
+ <button>Read more</button><hr>
+ <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?size=626&ext=jpg&ga=GA1.1.1811006048.1682153010&semt=robertav1_2_sidr"alt="insta" width="90px" height="40px">
+ <img src="https://scontent-del1-2.xx.fbcdn.net/v/t1.6435-9/58978526_10158354585751729_7411073224387067904_n.png?stp=dst-png_p206x206&_nc_cat=1&ccb=1-7&_nc_sid=cad550&_nc_ohc=mYZUuUHa4kAAX-I6iNE&_nc_ht=scontent-del1-2.xx&oh=00_AfD74wmuT9shd3bTKaMBODWPio85mLt86-l-zruOZ5Depg&oe=64761B95"alt=fb width="90px" height="40px">
+ <img src="https://cdn.pixabay.com/photo/2016/11/18/11/17/youtube-1834016__340.png"alt=YT width="90px" height="40px">
+ </div>
+ <div class="para-right">
+    <img src="https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Best phone dealer">
+
+ </div>
+            </main>
+</body>
+</html>
